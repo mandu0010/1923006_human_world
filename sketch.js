@@ -1,6 +1,8 @@
 // The Nature of Code
 // Daniel Shiffman
 // http://natureofcode.com
+let song;
+
 let img;
 // A reference to our box2d world
 let world;
@@ -14,12 +16,16 @@ let wall;
 
 function preload() {
   img = loadImage('man.jpg');
+  soundFormats('mp3');
+  song = loadSound('A');
 }
 
 function setup() {
   createCanvas(300, 700);
   // background(img);
   // Initialize box2d physics and create the world
+  sound.play();
+
   world = createWorld();
 
   world.SetContactListener(new CustomListener());
