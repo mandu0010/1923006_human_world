@@ -1,7 +1,7 @@
 // The Nature of Code
 // Daniel Shiffman
 // http://natureofcode.com
-let song;
+// let song;
 
 let img;
 // A reference to our box2d world
@@ -16,8 +16,8 @@ let wall;
 
 function preload() {
   img = loadImage('man.jpg');
-  soundFormats('mp3');
-  song = loadSound('A');
+  // soundFormats('mp3');
+  // song = loadSound('A');
 }
 
 function setup() {
