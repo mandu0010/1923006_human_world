@@ -24,7 +24,7 @@ function setup() {
   createCanvas(300, 700);
   // background(img);
   // Initialize box2d physics and create the world
-  sound.play();
+  // sound.play();
 
   world = createWorld();
 
